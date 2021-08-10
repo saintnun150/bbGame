@@ -2,16 +2,16 @@ let BBGame = function () {
 
 }
 
-let comAns;
+let comAnswer;
 
 BBGame.startGame = () => {
-    if (!comAns) {
+    if (!comAnswer) {
         let ca = BBGame.getComAnswer();
-        comAns = ca
+        comAnswer = ca
     }
     let typing = prompt('숫자를 입력하세요')
-    let ua = BBGame.getUserAnswer(typing)
-    return BBGame.compareAnswers(comAns, ua)
+    let userAnswer = BBGame.getUserAnswer(typing)
+    return BBGame.compareAnswers(comAnswer, userAnswer)
 
 }
 
